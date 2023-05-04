@@ -2,7 +2,10 @@ PUT http://localhost:8080/kafka/send/k1/하나1
 ###
 PUT http://localhost:8080/kafka/send/k2/둘2
 ###
-PUT http://localhost:8080/kafka/send/k3/셋4
+PUT http://localhost:8080/kafka/send/k3/셋
+###
+
+DELETE http://localhost:8080/kafka/db/k3
 ###
 
 GET http://localhost:8080/kafka/db

@@ -23,7 +23,12 @@ public class CompactTopicListener implements ConsumerSeekAware {
 
 	@KafkaListener(id = "k1", topics = KafkaConfigure.TOPIC_NAME)
 	public void onMessage(ConsumerRecord<String, String> record) {
-		compactDB.put(record.key(), record.value());
+		if (record.value() == null) {
+			compactDB.remove(record.key());
+		}
+		else {
+			compactDB.put(record.key(), record.value());
+		}
 		log.info("[REV]-> {}", record.value());
 	}
 

@@ -22,6 +22,7 @@ public class KafkaConfigure {
             .name(TOPIC_NAME)
             .compact()
             .config(TopicConfig.MIN_CLEANABLE_DIRTY_RATIO_CONFIG, "0.001")
+			.config(TopicConfig.SEGMENT_MS_CONFIG, "5000")
             .build();
         // @formatter:on
 	}
