@@ -1,0 +1,9 @@
+PUT http://localhost:8080/kafka/send/k1/하나1
+###
+PUT http://localhost:8080/kafka/send/k2/둘2
+###
+PUT http://localhost:8080/kafka/send/k3/셋4
+###
+
+GET http://localhost:8080/kafka/db
+###
