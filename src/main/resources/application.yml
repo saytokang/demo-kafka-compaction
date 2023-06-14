@@ -1,0 +1,15 @@
+
+spring:
+    kafka:
+        consumer:
+            # bootstrap-servers: localhost:9092
+            bootstrap-servers: 10.10.1.22:9092,10.10.1.23:9092,10.10.1.24:9092
+            key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+            value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+        producer:
+            # bootstrap-servers: localhost:9092
+            bootstrap-servers: 10.10.1.22:9092,10.10.1.23:9092,10.10.1.24:9092
+            key-serializer: org.apache.kafka.common.serialization.StringSerializer
+            value-serializer: org.apache.kafka.common.serialization.StringSerializer
+            
+        bootstrap-servers: 10.10.1.22:9092,10.10.1.23:9092,10.10.1.24:9092

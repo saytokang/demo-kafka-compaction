@@ -12,9 +12,11 @@ import org.springframework.kafka.config.TopicBuilder;
 @Configuration
 public class KafkaConfigure {
 
-	public static final String TOPIC_NAME = "compact-topic";
+	// public static final String TOPIC_NAME = "compact-topic";
+	// public static final String TOPIC_NAME = "apps";
+	public static final String TOPIC_NAME = "schema";
 
-	@Bean
+	// @Bean
 	public NewTopic compactTopic() {
 
 		// @formatter:off
